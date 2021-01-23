@@ -4,12 +4,8 @@ using System.Text;
 
 namespace SOLID_Labb
 {
-    class Hedgehog : Animal
+    class HedgehogActions : AnimalActions
     {
-        public Hedgehog(string color): base(color)
-        {
-            
-        }
 
         public override void Eat()
         {

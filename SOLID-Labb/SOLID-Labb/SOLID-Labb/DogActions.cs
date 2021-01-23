@@ -4,26 +4,25 @@ using System.Text;
 
 namespace SOLID_Labb
 {
-    class Bird : Animal
+    class DogActions : AnimalActions
     {
-        public Bird(string color): base(color)
-        {
-            
-        }
+     
 
         public override void Eat()
         {
-            Console.WriteLine("Bird is chirping!");
+            Console.WriteLine("Dog is barking!");
         }
 
         public override void Sleep()
         {
-            Console.WriteLine("Bird is sleeping!");
+            Console.WriteLine("Dog is sleeping!");
         }
 
         public override void Speak()
         {
-            Console.WriteLine("Bird is peck-peck-pecking away!");
+            Console.WriteLine("Dog is eating. " + _owner +" is happy!");
         }
+
+       
     }
 }
