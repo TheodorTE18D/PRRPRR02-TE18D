@@ -4,13 +4,12 @@ using System.Text;
 
 namespace SOLID_Labb
 {
-    class BirdProperties : AnimalProperties
+    class Bird : AnimalColor
     {
-        public BirdProperties(string color): base(color)
+        public Bird(string color): base(color)
         {
             
         }
-
-     
+             
     }
 }

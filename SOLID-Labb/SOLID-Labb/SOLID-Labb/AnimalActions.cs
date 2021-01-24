@@ -6,6 +6,7 @@ namespace SOLID_Labb
 {
     public abstract class AnimalActions
     {
+        
         public abstract void Speak();
 
         public abstract void Sleep();

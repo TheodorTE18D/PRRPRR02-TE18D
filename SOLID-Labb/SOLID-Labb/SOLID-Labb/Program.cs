@@ -6,16 +6,16 @@ namespace SOLID_Labb
     {
         static void Main(string[] args)
         {
-            AnimalProperties[] animalProperties = {new DogProperties("Black"),
-                            new HedgehogProperties("Pink"),
-                            new BirdProperties("Yellow")};
+            AnimalColor[] animalColor = {new Dog("Black"),
+                            new Hedgehog("Pink"),
+                            new Bird("Yellow")};
             AnimalActions[] animalActions = { new DogActions(), new HedgehogActions(), new BirdActions()};
 
             Console.WriteLine("###############");
             Console.WriteLine();
-            for (var i = 0; i < animalProperties.Length; i++)
+            for (var i = 0; i < animalColor.Length; i++)
             {
-                if (animalProperties[i] is DogProperties dog)
+                if (animalActions[i] is DogActions dog)
                 {
                     dog.TransferOwnership("Niklas");
                 }
@@ -23,8 +23,8 @@ namespace SOLID_Labb
                 animalActions[i].Eat();
                 animalActions[i].Sleep();
                 animalActions[i].Speak();
-                animalProperties[i]._color = "Grey";
-                Console.WriteLine(animalProperties[i].GetType().Name + " is " + animalProperties[i]._color);
+                animalColor[i]._color = "Grey";
+                Console.WriteLine(animalColor[i].GetType().Name + " is " + animalColor[i]._color);
                 Console.WriteLine();
 
                 Console.WriteLine("###############");

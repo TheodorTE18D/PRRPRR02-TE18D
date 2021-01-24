@@ -6,8 +6,12 @@ namespace SOLID_Labb
 {
     class DogActions : AnimalActions
     {
-     
+        string _owner;
 
+        public void TransferOwnership(string owner)
+        {
+            _owner = owner;
+        }
         public override void Eat()
         {
             Console.WriteLine("Dog is barking!");
@@ -20,9 +24,8 @@ namespace SOLID_Labb
 
         public override void Speak()
         {
-            Console.WriteLine("Dog is eating. " + _owner +" is happy!");
+            Console.WriteLine("Dog is eating. " + _owner + " is happy!");
         }
-
-       
+         
     }
 }

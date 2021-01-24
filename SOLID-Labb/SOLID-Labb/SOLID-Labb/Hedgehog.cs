@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SOLID_Labb
 {
-    class HedgehogProperties : AnimalProperties
+    class Hedgehog : AnimalColor
     {
-        public HedgehogProperties(string color): base(color)
+        public Hedgehog(string color): base(color)
         {
 
         }
